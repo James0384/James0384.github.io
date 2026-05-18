@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Light Productions</title>
+    <meta name="description" content="Independent software studio building tools for home cooks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f5f1ea;
+            --bg-accent: #ebe4d6;
+            --ink: #1f1a14;
+            --ink-soft: #5a5147;
+            --ink-faint: #9a9087;
+            --accent: #b8732c;
+            --rule: #d8d0c2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            line-height: 1.65;
+            font-size: 17px;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 5rem 2rem 3rem;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 0.875rem;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .mark {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 35%, #f4c97d 0%, var(--accent) 60%, #8a4a16 100%);
+            box-shadow: 0 2px 8px rgba(184, 115, 44, 0.25);
+            flex-shrink: 0;
+        }
+
+        .wordmark {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: 1.125rem;
+            letter-spacing: -0.01em;
+            color: var(--ink);
+        }
+
+        h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: clamp(2rem, 5vw, 2.875rem);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.25rem;
+            color: var(--ink);
+        }
+
+        .lede {
+            font-size: 1.1875rem;
+            color: var(--ink-soft);
+            line-height: 1.55;
+            margin-bottom: 4rem;
+            max-width: 38rem;
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        h2 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-weight: 500;
+            font-size: 0.8125rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-faint);
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            color: var(--ink);
+            margin-bottom: 1rem;
+            max-width: 38rem;
+        }
+
+        section p:last-child { margin-bottom: 0; }
+
+        .product {
+            background: var(--bg-accent);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 3.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 140px;
+            height: 140px;
+            background: radial-gradient(circle, rgba(184, 115, 44, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .product h2 { margin-bottom: 0.75rem; }
+
+        .product .name {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .product p { color: var(--ink-soft); }
+
+        .status {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.25rem 0.75rem;
+            background: rgba(184, 115, 44, 0.12);
+            color: var(--accent);
+            border-radius: 4px;
+            font-size: 0.8125rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--rule);
+            font-size: 0.9375rem;
+            color: var(--ink-soft);
+        }
+
+        footer .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease;
+        }
+
+        footer a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        .meta {
+            color: var(--ink-faint);
+            font-size: 0.8125rem;
+        }
+
+        @media (max-width: 540px) {
+            .container { padding: 3rem 1.5rem 2rem; }
+            header { margin-bottom: 3rem; }
+            .lede { margin-bottom: 3rem; }
+            section { margin-bottom: 2.5rem; }
+            .product { padding: 1.5rem; margin-bottom: 2.5rem; }
+            footer { margin-top: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="mark" aria-hidden="true"></div>
+            <div class="wordmark">Spin Light Productions</div>
+        </header>
+
+        <h1>Software for the kitchen.</h1>
+        <p class="lede">An independent studio building tools that help home cooks discover, organize, and share recipes from the cuisines they care about.</p>
+
+        <div class="product">
+            <h2>Currently building</h2>
+            <div class="name">Recipe Studio</div>
+            <p>A bilingual cooking app focused on deep coverage of Ecuadorian and world cuisines &mdash; with nutrition analysis, meal planning, and intelligent recipe organization built in.</p>
+            <span class="status">In private testing</span>
+        </div>
+
+        <section>
+            <h2>About</h2>
+            <p>Spin Light Productions is an independent software studio. We focus on quiet, well-crafted tools rather than headline features &mdash; the kind of software you keep using because it stays out of the way and does the thing you needed it to do.</p>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div>
+                    Contact: <a href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a>
+                </div>
+                <div class="meta">
+                    Spin Light Productions LLC &middot; Virginia, USA
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
