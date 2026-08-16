@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mishe Miller Cooking Show — Spin Light Productions</title>
+  <meta name="description" content="Ecuadorian home cooking, made easy. New Shorts every week.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f5f1ea; --bg-deep:#ebe4d6; --ink:#1f1a14; --ink-soft:#5a5147; --ink-faint:#9a9087; --accent:#b8732c; --accent-deep:#8a4a16; --rule:#d8d0c2; --purple:#2d1b4e; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; font-size:17px; min-height:100vh; -webkit-font-smoothing:antialiased; }
+    body::before { content:''; position:fixed; inset:0; background:radial-gradient(ellipse 80% 50% at 100% -10%,rgba(244,201,125,.22),transparent 50%),radial-gradient(ellipse 60% 40% at -10% 80%,rgba(184,115,44,.08),transparent 45%); pointer-events:none; z-index:0; }
+    .container { position:relative; z-index:1; max-width:740px; margin:0 auto; padding:4.5rem 2rem 3rem; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:3.5rem; flex-wrap:wrap; }
+    .brand { display:flex; align-items:center; gap:.875rem; color:inherit; text-decoration:none; }
+    .mark { width:38px; height:38px; border-radius:50%; background:radial-gradient(circle at 35% 35%,#f4c97d 0%,var(--accent) 55%,var(--accent-deep) 100%); box-shadow:0 2px 10px rgba(184,115,44,.3); flex-shrink:0; }
+    .wordmark { font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:1.1rem; }
+    .nav { display:flex; gap:1.1rem; font-size:.9rem; flex-wrap:wrap; }
+    .nav a { color:var(--ink-soft); text-decoration:none; border-bottom:1px solid transparent; }
+    .nav a:hover, .nav a[aria-current="page"] { color:var(--accent); border-bottom-color:var(--accent); }
+    .eyebrow { font-size:.75rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem; }
+    h1 { font-family:'Fraunces',Georgia,serif; font-weight:500; font-size:clamp(2.15rem,6vw,3.1rem); line-height:1.12; letter-spacing:-.025em; margin-bottom:1.25rem; }
+    .lede { font-size:1.2rem; color:var(--ink-soft); line-height:1.55; max-width:36rem; margin-bottom:2.5rem; }
+    .bodycopy { color:var(--ink-soft); max-width:38rem; margin-bottom:1.1rem; }
+    .links a { color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+    .links a:hover { border-bottom-color:var(--accent); }
+    footer { margin-top:2rem; padding-top:2rem; border-top:1px solid var(--rule); font-size:.9rem; color:var(--ink-soft); }
+    footer .row { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1.25rem; }
+    footer a { color:var(--accent); text-decoration:none; }
+    .legal-links { display:flex; gap:1rem; flex-wrap:wrap; }
+    .meta { color:var(--ink-faint); font-size:.8rem; margin-top:.35rem; }
+    @media (max-width:700px) { .container { padding:3rem 1.35rem 2rem; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="/"><div class="mark" aria-hidden="true"></div><div class="wordmark">Spin Light Productions</div></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/receta.html">Receta</a>
+        <a href="/mishe.html" aria-current="page">Show</a>
+        <a href="/film.html">Film</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </header>
+    <p class="eyebrow">The show</p>
+    <h1>Mishe Miller Cooking Show</h1>
+    <p class="lede">Ecuadorian home cooking, made easy. New Shorts every week.</p>
+    <p class="bodycopy">Mishe cooks the food she grew up with, and the weeknight plates that actually get made. Full recipes live on YouTube.</p>
+    <p class="bodycopy links">Watch: <a href="https://www.youtube.com/@MisheMiller">YouTube @MisheMiller</a> · TikTok, Instagram, Facebook @mishe.miller</p>
+    <footer>
+      <div class="row">
+        <div>
+          <div>Contact: <a href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a></div>
+          <div class="meta">Spin Light Productions LLC · Williamsburg, Virginia</div>
+        </div>
+        <div class="legal-links">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
