@@ -487,6 +487,27 @@ h1 em {
 }
 .web-link:hover { border-bottom-color: var(--gold-2); }
 
+.stills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 2.4rem 0 0;
+}
+.stills figure { margin: 0; }
+.stills img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: var(--bg-3);
+}
+.stills figcaption {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  margin-top: 0.45rem;
+  letter-spacing: 0.04em;
+}
+
 .credits {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -598,6 +619,8 @@ h1 em {
   .feature { grid-template-columns: 1fr; }
   .feature .phone { order: -1; }
   .credits { grid-template-columns: 1fr; }
+  .stills { grid-template-columns: 1fr; }
+  .stills img { height: 200px; }
   .nav { padding-inline: 16px; }
   .hero, .hero-page { padding-bottom: 3.25rem; }
   .wrap { padding-inline: 18px; }
