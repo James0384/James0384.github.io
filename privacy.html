@@ -4,25 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Receta Studio</title>
-  <style>
-    body {
-      font-family: Inter, system-ui, sans-serif;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 2rem;
-      line-height: 1.6;
-      color: #1f1a14;
-      background: #f5f1ea;
-    }
-    h1, h2, h3 { line-height: 1.25; }
-    h2 { margin-top: 2rem; }
-    h3 { margin-top: 1.25rem; }
-    a { color: #b8732c; }
-    p { margin: 0.75rem 0; }
-  </style>
+  <link rel="icon" href="/assets/brand/mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Oswald:wght@500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-  <p><a href="/">← Spin Light Productions</a></p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <a class="brand" href="/">
+      <img class="mark" src="/assets/brand/mark.svg" alt="">
+      <span class="wordmark">Spin Light</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Menu"><span></span></button>
+    <nav id="nav-panel" class="nav-links" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/receta.html">Receta</a>
+      <a href="/mishe.html">Show</a>
+      <a href="/film.html">Film</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
+  <main id="main" class="legal-wrap">
 
   <h1>Privacy Policy — Receta Studio</h1>
   <p><strong>Last updated: August 7, 2026</strong><br>
@@ -91,5 +96,20 @@
   121 Wellington Circle<br>
   Williamsburg, VA 23185<br>
   <a href="mailto:support@recetastudio.com">support@recetastudio.com</a></p>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap row">
+      <div>
+        <div>Contact: <a href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a></div>
+        <div class="meta">Spin Light Productions LLC · Williamsburg, Virginia</div>
+      </div>
+      <div class="legal-links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/site.js"></script>
 </body>
 </html>
