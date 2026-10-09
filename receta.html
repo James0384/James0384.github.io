@@ -12,22 +12,26 @@
   <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Oswald:wght@500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css?v=4">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="nav">
-    <a class="brand" href="/">
-      <img class="mark" src="/assets/brand/mark.svg" alt="">
-      <span class="wordmark">Spin Light</span>
-    </a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Menu"><span></span></button>
+    <header class="nav">
+    <a class="brand" href="/">Spin Light</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span></button>
     <nav id="nav-panel" class="nav-links" aria-label="Primary">
       <a href="/">Home</a>
-      <a href="/receta.html" aria-current="page">Receta</a>
-      <a href="/mishe.html">Show</a>
-      <a href="/film.html">Film</a>
+      <a href="/start-a-project/">Web Design</a>
+      <a href="/receta.html" aria-current="page">Receta Studio</a>
+      <div class="nav-drop">
+        <button class="nav-drop-btn" type="button" aria-expanded="false" aria-controls="media-menu">Media <span class="caret" aria-hidden="true"></span></button>
+        <div id="media-menu" class="nav-menu" hidden>
+          <a href="/mishe.html">Mishe Miller Cooking Show</a>
+          <a href="/film.html">Star Spangled Adventures (animation)</a>
+          <span class="nav-soon">More animation — coming soon</span>
+        </div>
+      </div>
       <a href="/about.html">About</a>
     </nav>
   </header>
@@ -102,15 +106,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap row">
-      <div>
-        <div>Contact: <a href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a></div>
-        <div class="meta">Spin Light Productions LLC · Williamsburg, Virginia</div>
-      </div>
-      <div class="legal-links">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
-      </div>
+    <div class="frame row">
+      <p>© 2026 Spin Light Productions · Williamsburg, VA</p>
+      <p class="legal-links"><a href="mailto:james.miller@spinlightproductions.com">Contact</a><span aria-hidden="true">·</span><a href="/privacy.html">Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Terms</a></p>
     </div>
   </footer>
   <script src="/js/site.js"></script>

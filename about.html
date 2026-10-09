@@ -4,74 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Spin Light Productions</title>
-  <meta name="description" content="Spin Light Productions LLC, Williamsburg, Virginia. Receta Studio, the Mishe Miller Cooking Show, and film work.">
+  <meta name="description" content="Spin Light Productions LLC, Williamsburg, Virginia. The websites, the weeknight tool, the show, and the pictures.">
   <meta property="og:title" content="About — Spin Light Productions">
-  <meta property="og:image" content="https://spinlightproductions.com/assets/work/night-counter.jpg">
+  <meta property="og:description" content="One studio, many kinds of work.">
+  <meta property="og:image" content="https://spinlightproductions.com/assets/work/hero-stage.jpg">
   <link rel="icon" href="/assets/brand/mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Oswald:wght@500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css?v=4">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="nav">
-    <a class="brand" href="/">
-      <img class="mark" src="/assets/brand/mark.svg" alt="">
-      <span class="wordmark">Spin Light</span>
-    </a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Menu"><span></span></button>
+    <a class="brand" href="/">Spin Light</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span></button>
     <nav id="nav-panel" class="nav-links" aria-label="Primary">
       <a href="/">Home</a>
-      <a href="/receta.html">Receta</a>
-      <a href="/mishe.html">Show</a>
-      <a href="/film.html">Film</a>
+      <a href="/start-a-project/">Web Design</a>
+      <a href="/receta.html">Receta Studio</a>
+      <div class="nav-drop">
+        <button class="nav-drop-btn" type="button" aria-expanded="false" aria-controls="media-menu">Media <span class="caret" aria-hidden="true"></span></button>
+        <div id="media-menu" class="nav-menu" hidden>
+          <a href="/mishe.html">Mishe Miller Cooking Show</a>
+          <a href="/film.html">Star Spangled Adventures (animation)</a>
+          <span class="nav-soon">More animation — coming soon</span>
+        </div>
+      </div>
       <a href="/about.html" aria-current="page">About</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero hero-page">
-      <div class="hero-media" aria-hidden="true">
-        <img src="/assets/work/night-counter.jpg" alt="">
-      </div>
-      <div class="wrap hero-copy">
+    <section class="banner">
+      <div class="frame">
         <p class="eyebrow">About</p>
-        <h1>One studio, three kinds of work.</h1>
-        <p class="lede">Spin Light Productions LLC, Williamsburg, Virginia. The weeknight tool, the show, and the pictures.</p>
+        <h1>One studio, <em>many</em> kinds of work.</h1>
+        <p class="lede">Spin Light Productions LLC, Williamsburg, Virginia. The websites, the weeknight tool, the show, and the pictures.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap prose">
-        <p>We are a small independent studio. Receta Studio is live on the App Store, Google Play, and the web. The Mishe Miller Cooking Show is home cooking from Ecuador, a new Short every week. Film work is 3D and lighting for Star Spangled Adventures.</p>
-        <dl class="credits">
-          <div class="credit">
-            <dt>3D / product</dt>
-            <dd>James Miller</dd>
-          </div>
-          <div class="credit">
-            <dt>Lighting / the show</dt>
-            <dd>Mishelle Miller</dd>
-          </div>
-        </dl>
-        <p style="margin-top:2rem">121 Wellington Circle<br>Williamsburg, VA 23185</p>
-        <p class="links"><a href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a></p>
+    <section class="about-body">
+      <div class="frame">
+        <p class="statement">We are a small independent studio.</p>
+        <div class="offerings">
+          <article class="plain-card">
+            <h2>Web Design</h2>
+            <p>Hand-made websites for small businesses, built and launched by James.</p>
+          </article>
+          <article class="plain-card purple">
+            <h2>Receta Studio</h2>
+            <p>Live on the App Store and Google Play, for iPhone and Android.</p>
+          </article>
+          <article class="plain-card">
+            <h2>The Mishe Miller Cooking Show</h2>
+            <p>Home cooking from Ecuador, a new Short every week.</p>
+          </article>
+          <article class="plain-card">
+            <h2>Star Spangled Adventures</h2>
+            <p>Film work: 3D and lighting.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-block">
+      <div class="frame">
+        <h2>Get in touch</h2>
+        <p class="address">Spin Light Productions LLC<br>121 Wellington Circle<br>Williamsburg, VA 23185</p>
+        <p><a class="email-link" href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a></p>
+        <a class="btn btn-lg btn-gold" href="/start-a-project/">Start a project →</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap row">
-      <div>
-        <div>Contact: <a href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a></div>
-        <div class="meta">Spin Light Productions LLC · Williamsburg, Virginia</div>
-      </div>
-      <div class="legal-links">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
-      </div>
+    <div class="frame row">
+      <p>© 2026 Spin Light Productions · Williamsburg, VA</p>
+      <p class="legal-links"><a href="mailto:james.miller@spinlightproductions.com">Contact</a><span aria-hidden="true">·</span><a href="/privacy.html">Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Terms</a></p>
     </div>
   </footer>
   <script src="/js/site.js"></script>

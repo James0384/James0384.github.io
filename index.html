@@ -4,115 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spin Light Productions</title>
-  <meta name="description" content="A Williamsburg studio. Receta Studio, the Mishe Miller Cooking Show, and film work for Star Spangled Adventures.">
+  <meta name="description" content="Independent studio in Williamsburg, Virginia. Web design, Receta Studio, the Mishe Miller Cooking Show, and Star Spangled Adventures.">
   <meta property="og:title" content="Spin Light Productions">
-  <meta property="og:description" content="A Williamsburg studio for supper, a show, and pictures.">
-  <meta property="og:image" content="https://spinlightproductions.com/assets/work/hero.jpg">
+  <meta property="og:description" content="The light keeps spinning. Websites, a recipe app, and stories for the screen.">
+  <meta property="og:image" content="https://spinlightproductions.com/assets/work/hero-stage.jpg">
   <meta property="og:type" content="website">
   <link rel="icon" href="/assets/brand/mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Oswald:wght@500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/site.css?v=4">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="nav">
-    <a class="brand" href="/">
-      <img class="mark" src="/assets/brand/mark.svg" alt="">
-      <span class="wordmark">Spin Light</span>
-    </a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Menu"><span></span></button>
+    <a class="brand" href="/">Spin Light</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><span></span></button>
     <nav id="nav-panel" class="nav-links" aria-label="Primary">
       <a href="/" aria-current="page">Home</a>
-      <a href="/receta.html">Receta</a>
-      <a href="/mishe.html">Show</a>
-      <a href="/film.html">Film</a>
+      <a href="/start-a-project/">Web Design</a>
+      <a href="/receta.html">Receta Studio</a>
+      <div class="nav-drop">
+        <button class="nav-drop-btn" type="button" aria-expanded="false" aria-controls="media-menu">Media <span class="caret" aria-hidden="true"></span></button>
+        <div id="media-menu" class="nav-menu" hidden>
+          <a href="/mishe.html">Mishe Miller Cooking Show</a>
+          <a href="/film.html">Star Spangled Adventures (animation)</a>
+          <span class="nav-soon">More animation — coming soon</span>
+        </div>
+      </div>
       <a href="/about.html">About</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-media" aria-hidden="true">
-        <img src="/assets/work/hero.jpg" alt="">
-      </div>
-      <div class="wrap hero-copy">
+    <section class="home-hero">
+      <img class="hero-photo" src="/assets/work/hero-stage.jpg" width="1280" height="720" alt="Spinning stage light throwing orange-gold rays in the dark">
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="frame">
         <p class="eyebrow">Independent studio · Williamsburg, Virginia</p>
         <h1>The light keeps <em>spinning.</em></h1>
         <p class="lede">Receta Studio. The Mishe Miller Cooking Show. Star Spangled Adventures. A small house for the weeknight, the table, and the screen.</p>
       </div>
     </section>
 
-    <section class="section" id="work">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>The work</h2>
-          <p class="kicker">Three kinds</p>
-        </div>
-        <div class="work">
-          <article class="tile tile-receta">
-            <img class="cover" src="/assets/work/receta-food.jpg" alt="">
-            <a class="tile-main" href="/receta.html">
-              <div class="tile-body">
-                <div class="live">Available now</div>
-                <h3>Receta Studio</h3>
-                <p>Dinner decided, even when you can’t think of a thing. On iPhone, Android, and the web.</p>
-              </div>
-            </a>
-            <div class="tile-stores store-row">
-              <a class="store-badge" href="https://apps.apple.com/app/receta-studio/id6775508328" rel="noopener noreferrer">
-                <img src="/assets/brand/badge-app-store-en.svg" width="120" height="40" alt="Download on the App Store">
-              </a>
-              <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.spinlightproductions.recetastudio" rel="noopener noreferrer">
-                <img src="/assets/brand/badge-google-play-en.svg" width="135" height="40" alt="Get it on Google Play">
-              </a>
-            </div>
-          </article>
-          <a class="tile" href="/mishe.html">
-            <img class="cover cover-show" src="/assets/work/show-set.jpg?v=2" alt="Mishe Miller cooking in her kitchen.">
-            <div class="tile-body">
-              <p class="eyebrow" style="margin-bottom:.4rem">The show</p>
-              <h3>Mishe Miller</h3>
-              <p>Ecuadorian home cooking, made easy. A new Short every week.</p>
-            </div>
-          </a>
-          <a class="tile" href="/film.html">
-            <img class="cover" src="/assets/work/film.jpg?v=2" alt="Liberty the Eagle from Star Spangled Adventures">
-            <div class="tile-body">
-              <p class="eyebrow" style="margin-bottom:.4rem">Film &amp; production</p>
-              <h3>Star Spangled Adventures</h3>
-              <p>3D and lighting, from a small studio in Williamsburg.</p>
-            </div>
-          </a>
-        </div>
-      </div>
+    <section class="frame offers" aria-label="What we make">
+      <a class="offer offer-gold" href="/start-a-project/">
+        <h2>Web Design</h2>
+        <p>Custom websites for small businesses — built by hand, made to feel like you.</p>
+        <span class="pill">Start a project →</span>
+      </a>
+      <a class="offer offer-purple" href="/receta.html">
+        <h2>Receta Studio</h2>
+        <p>Dinner decided, even when you can’t think of a thing.</p>
+        <span class="pill">Get the app →</span>
+      </a>
+      <a class="offer offer-gold" href="/mishe.html">
+        <h2>Media</h2>
+        <p>The Mishe Miller Cooking Show, Star Spangled Adventures, and more on screen.</p>
+        <span class="pill">Watch →</span>
+      </a>
     </section>
 
-    <section class="band">
-      <div class="band-media">
-        <img src="/assets/work/night-counter.jpg" alt="A kitchen counter at night, a glass of water and basil in a pool of warm light.">
-      </div>
-      <div class="band-copy">
-        <p class="eyebrow">The house</p>
-        <h2>One studio. Three kinds of work.</h2>
-        <p>Spin Light Productions LLC. James Miller, 3D artist. Mishelle Miller, lighting — and the cooking show. We make Receta Studio, film the weeknight table, and light pictures for the screen.</p>
-        <p class="links"><a href="/about.html">About the studio</a></p>
+    <section class="studio">
+      <div class="frame">
+        <h2>One studio. Many kinds of work.</h2>
+        <p>Websites for neighbors, a recipe app for families, and stories for the screen — all made in one small Williamsburg house.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap row">
-      <div>
-        <div>Contact: <a href="mailto:james.miller@spinlightproductions.com">james.miller@spinlightproductions.com</a></div>
-        <div class="meta">Spin Light Productions LLC · Williamsburg, Virginia</div>
-      </div>
-      <div class="legal-links">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
-      </div>
+    <div class="frame row">
+      <p>© 2026 Spin Light Productions · Williamsburg, VA</p>
+      <p class="legal-links"><a href="mailto:james.miller@spinlightproductions.com">Contact</a><span aria-hidden="true">·</span><a href="/privacy.html">Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Terms</a></p>
     </div>
   </footer>
   <script src="/js/site.js"></script>
