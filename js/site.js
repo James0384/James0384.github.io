@@ -65,20 +65,48 @@
 
   var form = document.getElementById("project-form");
   if (!form) return;
+
+  function showThanks() {
+    form.innerHTML = '<p class="statement" tabindex="-1">Got it. We\'ll reply within two business days.</p>';
+    var line = form.querySelector(".statement");
+    if (line) line.focus();
+  }
+
+  if (window.location.hash === "#sent") showThanks();
+
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     if (!form.reportValidity()) return;
     var data = new FormData(form);
-    var body = [
-      "Name: " + data.get("name"),
-      "Email: " + data.get("email"),
-      "Project: " + data.get("project"),
-      "Website type: " + data.get("website_type"),
-      "Business or personal: " + data.get("audience")
-    ].join("\n");
     var status = document.getElementById("form-status");
-    if (status) status.textContent = "Opening your email app with this message.";
-    window.location.href = "mailto:james.miller@spinlightproductions.com?subject=" +
-      encodeURIComponent("New website project") + "&body=" + encodeURIComponent(body);
+    var submitBtn = form.querySelector('[type="submit"]');
+    if (data.get("botcheck")) {
+      showThanks();
+      return;
+    }
+    if (submitBtn) submitBtn.disabled = true;
+    if (status) status.textContent = "";
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        access_key: data.get("access_key"),
+        subject: data.get("subject"),
+        from_name: data.get("from_name"),
+        name: data.get("name"),
+        email: data.get("email"),
+        message: data.get("message"),
+        "Website type": data.get("Website type"),
+        "Business or personal": data.get("Business or personal")
+      })
+    }).then(function (response) {
+      return response.json().then(function (result) {
+        if (!response.ok || !result.success) throw new Error(result.message || "Send failed");
+        showThanks();
+      });
+    }).catch(function () {
+      if (submitBtn) submitBtn.disabled = false;
+      if (status) status.textContent = "That didn’t send. Please try again in a moment.";
+    });
   });
 })();

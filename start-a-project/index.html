@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css?v=4">
+  <link rel="stylesheet" href="/css/site.css?v=5">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -105,7 +105,12 @@
 
     <section class="block">
       <div class="frame">
-        <form class="form-card" id="project-form" action="mailto:james.miller@spinlightproductions.com" method="post" enctype="text/plain">
+        <form class="form-card" id="project-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="146d730f-ac1d-45dd-ad04-c5a6b8982490">
+          <input type="hidden" name="subject" value="New website project">
+          <input type="hidden" name="from_name" value="Spin Light Productions">
+          <input type="hidden" name="redirect" value="https://spinlightproductions.com/start-a-project/#sent">
+          <input class="botcheck" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
           <h2>Tell us about your project</h2>
           <p class="hint">All fields required. We reply within two business days.</p>
           <div class="form-grid">
@@ -119,11 +124,11 @@
             </div>
             <div class="field field-wide">
               <label for="project">Tell us about your project in a sentence</label>
-              <input id="project" name="project" type="text" placeholder="e.g. A simple site for my bakery with hours and a menu" required>
+              <input id="project" name="message" type="text" placeholder="e.g. A simple site for my bakery with hours and a menu" required>
             </div>
             <div class="field">
               <label for="website-type">Website type</label>
-              <select id="website-type" name="website_type" required>
+              <select id="website-type" name="Website type" required>
                 <option value="Marketing site" selected>Marketing site</option>
                 <option value="Portfolio">Portfolio</option>
                 <option value="E-commerce">E-commerce</option>
@@ -132,7 +137,7 @@
             </div>
             <div class="field">
               <label for="audience">Business or personal</label>
-              <select id="audience" name="audience" required>
+              <select id="audience" name="Business or personal" required>
                 <option value="Business" selected>Business</option>
                 <option value="Personal">Personal</option>
               </select>
@@ -153,6 +158,6 @@
       <p class="legal-links"><a href="mailto:james.miller@spinlightproductions.com">Contact</a><span aria-hidden="true">·</span><a href="/privacy.html">Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Terms</a></p>
     </div>
   </footer>
-  <script src="/js/site.js"></script>
+  <script src="/js/site.js?v=5"></script>
 </body>
 </html>
