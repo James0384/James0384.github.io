@@ -1251,3 +1251,5 @@ h1 em {
   .contact-list .email-link { display: block; width: fit-content; }
   .contact-list .contact-sep { display: none; }
 }
+/* Land below the sticky nav when following /about.html#contact */
+#contact { scroll-margin-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + 8px); }
