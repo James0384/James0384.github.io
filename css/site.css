@@ -1254,3 +1254,9 @@ h1 em {
 }
 /* Land below the sticky nav when following /about.html#contact */
 #contact { scroll-margin-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + 8px); }
+
+/* Footer links: drop the dot separators where the row can wrap (phones/tablets) */
+@media (max-width: 860px) {
+  .site-footer .legal-links { gap: 0.6rem 1.1rem; }
+  .site-footer .legal-links > span[aria-hidden="true"] { display: none; }
+}
