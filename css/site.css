@@ -45,7 +45,8 @@ body {
 
 body.nav-open { overflow: hidden; }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
+picture { display: contents; }
 .tile img.cover { background: var(--bg-3); }
 .cover-show { object-position: 55% 28%; }
 a { color: inherit; }

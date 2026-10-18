@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css?v=7">
+  <link rel="stylesheet" href="/css/site.css?v=8">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -38,7 +38,7 @@
   <main id="main">
     <section class="hero hero-split hero-film">
       <div class="hero-media">
-        <img src="/assets/work/film.jpg?v=2" alt="Liberty the Eagle in a tricorn hat, with Independence Hall and fireworks.">
+        <picture><source type="image/webp" srcset="/assets/work/film-900.webp 900w, /assets/work/film-1800.webp 1800w" sizes="(max-width: 860px) 100vw, 60vw"><img fetchpriority="high" width="1800" height="989" src="/assets/work/film.jpg?v=2" alt="Liberty the Eagle in a tricorn hat, with Independence Hall and fireworks."></picture>
       </div>
       <div class="wrap hero-copy">
         <p class="eyebrow">Film &amp; production</p>
@@ -55,19 +55,19 @@
         </div>
         <div class="stills">
           <figure>
-            <img src="/assets/work/film-liberty.jpg" alt="Liberty the Eagle in a tricorn hat, Independence Hall and fireworks behind her.">
+            <picture><source type="image/webp" srcset="/assets/work/film-liberty-600.webp 600w, /assets/work/film-liberty-1200.webp 1200w" sizes="(max-width: 860px) 92vw, 584px"><img loading="lazy" decoding="async" width="1800" height="989" src="/assets/work/film-liberty.jpg" alt="Liberty the Eagle in a tricorn hat, Independence Hall and fireworks behind her."></picture>
             <figcaption>Liberty the Eagle</figcaption>
           </figure>
           <figure>
-            <img src="/assets/work/film-founders.jpg" alt="Animated founding fathers gathered around a table with Liberty looking on.">
+            <picture><source type="image/webp" srcset="/assets/work/film-founders-600.webp 600w, /assets/work/film-founders-1200.webp 1200w" sizes="(max-width: 860px) 92vw, 584px"><img loading="lazy" decoding="async" width="1800" height="1010" src="/assets/work/film-founders.jpg" alt="Animated founding fathers gathered around a table with Liberty looking on."></picture>
             <figcaption>The founding</figcaption>
           </figure>
           <figure>
-            <img src="/assets/work/film-flag.jpg" alt="Colonial soldiers compare early American flags under a tree.">
+            <picture><source type="image/webp" srcset="/assets/work/film-flag-600.webp 600w, /assets/work/film-flag-1200.webp 1200w" sizes="(max-width: 860px) 92vw, 584px"><img loading="lazy" decoding="async" width="1542" height="1240" src="/assets/work/film-flag.jpg" alt="Colonial soldiers compare early American flags under a tree."></picture>
             <figcaption>The first flag</figcaption>
           </figure>
           <figure>
-            <img src="/assets/work/film-winter.jpg" alt="Continental officers in the snow outside a log cabin.">
+            <picture><source type="image/webp" srcset="/assets/work/film-winter-600.webp 600w, /assets/work/film-winter-1200.webp 1200w" sizes="(max-width: 860px) 92vw, 584px"><img loading="lazy" decoding="async" width="1600" height="889" src="/assets/work/film-winter.jpg" alt="Continental officers in the snow outside a log cabin."></picture>
             <figcaption>Winter campaign</figcaption>
           </figure>
         </div>
@@ -95,9 +95,13 @@
   <footer class="site-footer">
     <div class="frame row">
       <p>© 2026 Spin Light Productions · Williamsburg, VA</p>
-      <p class="legal-links"><a href="/about.html#contact">Contact</a><span aria-hidden="true">·</span><a href="/privacy.html">Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Terms</a></p>
+      <p class="legal-links"><a href="/about.html#contact">Contact</a><span aria-hidden="true">·</span><a href="/site-privacy.html">Site privacy</a><span aria-hidden="true">·</span><a href="/privacy.html">Receta Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Receta Terms</a></p>
     </div>
   </footer>
   <script src="/js/site.js?v=5"></script>
+  <!-- CLOUDFLARE WEB ANALYTICS: placeholder. Replace with the beacon snippet from
+       Cloudflare dashboard > Analytics & Logs > Web Analytics > spinlightproductions.com, e.g.
+       <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "SITE_TOKEN_HERE"}'></script>
+       (Not needed if Cloudflare's automatic setup is turned on for the proxied site.) -->
 </body>
 </html>

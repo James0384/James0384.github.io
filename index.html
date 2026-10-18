@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/site.css?v=7">
+  <link rel="stylesheet" href="/css/site.css?v=8">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -39,7 +39,7 @@
 
   <main id="main">
     <section class="home-hero">
-      <img class="hero-photo" src="/assets/work/hero-stage.jpg" width="1280" height="720" alt="Spinning stage light throwing orange-gold rays in the dark">
+      <picture><source type="image/webp" srcset="/assets/work/hero-stage-800.webp 800w, /assets/work/hero-stage-1280.webp 1280w" sizes="100vw"><img fetchpriority="high" class="hero-photo" src="/assets/work/hero-stage.jpg" width="1280" height="720" alt="Spinning stage light throwing orange-gold rays in the dark"></picture>
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="frame">
         <p class="eyebrow">Independent studio · Williamsburg, Virginia</p>
@@ -77,9 +77,13 @@
   <footer class="site-footer">
     <div class="frame row">
       <p>© 2026 Spin Light Productions · Williamsburg, VA</p>
-      <p class="legal-links"><a href="/about.html#contact">Contact</a><span aria-hidden="true">·</span><a href="/privacy.html">Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Terms</a></p>
+      <p class="legal-links"><a href="/about.html#contact">Contact</a><span aria-hidden="true">·</span><a href="/site-privacy.html">Site privacy</a><span aria-hidden="true">·</span><a href="/privacy.html">Receta Privacy</a><span aria-hidden="true">·</span><a href="/terms.html">Receta Terms</a></p>
     </div>
   </footer>
   <script src="/js/site.js?v=5"></script>
+  <!-- CLOUDFLARE WEB ANALYTICS: placeholder. Replace with the beacon snippet from
+       Cloudflare dashboard > Analytics & Logs > Web Analytics > spinlightproductions.com, e.g.
+       <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "SITE_TOKEN_HERE"}'></script>
+       (Not needed if Cloudflare's automatic setup is turned on for the proxied site.) -->
 </body>
 </html>
