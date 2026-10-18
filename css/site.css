@@ -1150,3 +1150,104 @@ h1 em {
   .form-card { padding: 28px 20px; }
   .offerings { grid-template-columns: 1fr; }
 }
+
+/* Nav legibility over any hero (photo, video, slides).
+   Links and wordmark sit on dark translucent pills; a soft top scrim
+   and text-shadow add depth. Pill alpha 0.8 keeps white and orange text
+   above 4.5:1 even over pure white. Solid rgba is the fallback when
+   backdrop-filter is unsupported. */
+.nav::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -28px;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(7, 6, 5, 0.6), rgba(7, 6, 5, 0));
+  transition: opacity 0.3s var(--ease);
+}
+.nav.is-scrolled::before { opacity: 0; }
+.brand,
+.nav-links a,
+.nav-drop-btn { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55); }
+.brand {
+  padding: 0 18px;
+  margin-left: -18px;
+  border-radius: 999px;
+  background: rgba(12, 10, 8, 0.8);
+  border: 1px solid rgba(244, 239, 230, 0.1);
+}
+.menu-btn {
+  background: rgba(12, 10, 8, 0.8);
+  border-color: rgba(244, 239, 230, 0.16);
+}
+.menu-btn span::before,
+.menu-btn span::after { left: 0; right: 0; }
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .brand,
+  .menu-btn {
+    -webkit-backdrop-filter: blur(14px) saturate(1.2);
+    backdrop-filter: blur(14px) saturate(1.2);
+  }
+}
+.nav.is-scrolled .brand {
+  background: transparent;
+  border-color: transparent;
+}
+.nav-links a:focus-visible,
+.nav-drop-btn:focus-visible,
+.brand:focus-visible,
+.menu-btn:focus-visible {
+  outline: 2px solid var(--gold-2);
+  outline-offset: 3px;
+}
+
+@media (min-width: 861px) {
+  .nav-links {
+    gap: 32px;
+    min-height: 44px;
+    padding: 0 24px;
+    margin-right: -24px;
+    border-radius: 999px;
+    background: rgba(12, 10, 8, 0.8);
+    border: 1px solid rgba(244, 239, 230, 0.1);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  }
+  .nav-links > a,
+  .nav-drop-btn { padding-top: 6px; }
+  @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .nav-links {
+      -webkit-backdrop-filter: blur(14px) saturate(1.2);
+      backdrop-filter: blur(14px) saturate(1.2);
+    }
+  }
+  .nav-menu { left: auto; right: -12px; }
+  .nav.is-scrolled .nav-links {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .brand { padding: 0 14px; margin-left: -10px; }
+}
+
+/* Contact list */
+.contact-list {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 6px;
+}
+.contact-list p { margin: 0; }
+.contact-name {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.contact-sep { margin: 0 10px; color: var(--ink-faint); }
+.contact-list a[href^="tel:"] { white-space: nowrap; }
+@media (max-width: 520px) {
+  .contact-list .email-link { display: block; width: fit-content; }
+  .contact-list .contact-sep { display: none; }
+}
